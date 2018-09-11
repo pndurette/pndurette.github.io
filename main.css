@@ -1,0 +1,211 @@
+/* Colours 
+Grey: #E6E6E6
+Blue: #3FA9F5
+*/
+
+body {
+	padding: 0;
+
+	font-size: 14pt;
+	font-family: 'Lato';
+  	font-style: italic;
+  	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1.2;
+
+	background-color: #E6E6E6;
+	color: white;
+}
+
+a { text-decoration: underline; }
+
+.content {
+    position: relative;
+	overflow: hidden;
+	padding: 10% 20% 10% 20%;
+}
+
+/* Keep size/don't stretch when view gets wide */
+@media screen and (min-width: 1024px) {
+	.content {
+		width: 500px;
+	}
+}
+
+/* Smaller side and bottom padding for mobile views (height or width) */
+@media screen and (max-width: 500px), (max-height: 500px) {
+	.content {
+		padding: 10% 5% 5% 5%;
+	}
+}
+
+/* No top extra padding for really small height (ex. iPhone 5) */
+@media screen and (max-height: 568px) {
+	.content {
+		padding: 10% 5% 5% 5%;
+	}
+}
+
+p {
+    margin: 0;
+    text-shadow: 2px 2px 2px black;
+}
+
+a:link,
+a:visited,
+a:active {
+	color: white;
+}
+
+a:hover {
+	background-color: #3FA9F5;
+	text-decoration: none;
+}
+
+div.split { margin-top: 100px; clear: both; }
+
+/* ---- h1 */
+/* Using a left border + left shift for h1 multi-line inline element padding.
+Usage: <div class="inline-h1"><h1><strong>lorem</strong></h1></div> */
+
+div.inline-h1 {
+	border-left: 20px solid white;
+	display: block;
+	margin: 20px 0;
+}
+
+h1 {
+	font-size: 350%;
+	color: #E6E6E6; /* background gray */
+	background-color: white;
+	display: inline;
+}
+
+h1 strong {
+	font-weight: normal;
+	position: relative;
+	left: -15px;
+}
+
+/* ---- End h1 ---- */
+
+/* ---- h2 */
+/* Using a left border + left shift for h2 multi-line inline element padding.
+Usage: <div class="inline-h2"><h2><strong>lorem</strong></h2></div> */
+
+div.inline-h2 {
+	border-left: 10px solid white;
+	display: block;
+	margin: 20px 0;
+}
+
+h2,
+h2 a:link,
+h2 a:visited,
+h2 a:active {
+	font-size: 200%;
+	/*color: #3FA9F5;*/ /* site blue */
+	color: #E6E6E6; /* background gray */
+	background-color: white;
+	display: inline;
+}
+
+h2 strong {
+	font-weight: normal;
+	position: relative;
+	left: -7px;
+}
+
+div.inline-h2 p { text-shadow: none; }
+
+/* ---- End h2 ---- */
+
+/* ----  p */
+/* Using a left border + left shift for p multi-line inline element padding.
+Usage: <div class="inline-p"><p><strong>lorem</strong></p></div> */
+
+div.inline-p {
+	border-left: 10px solid white;
+	display: block;
+	margin: 5px 0;
+}
+
+div.inline-p p {
+	font-size: 100%;
+	color: #808080; /* site dark gray */
+	background-color: white;
+	display: inline;
+	font-weight: lighter;
+}
+
+div.inline-p p.pale { color: #E6E6E6; /* background gray */ }
+
+div.inline-p p strong {
+	position: relative;
+	left: -7px;	
+}
+
+div.inline-p a:link,
+div.inline-p a:visited,
+div.inline-p a:active {
+	color: #3FA9F5; /* site blue */
+	text-decoration: none;
+}
+
+div.inline-p a:hover {
+	background-color: #3FA9F5;
+	color: white;
+	text-decoration: none;
+}
+
+div.inline-p p { text-shadow: none; }
+
+/* ---- End p ---- */
+
+/* ---- Misc */
+
+span.blue {
+	color: #3FA9F5; /* site blue */
+}
+
+.pn-tag {
+	font-size: 200%;
+	color: rgb(247, 159, 159); /* background gray */
+	background-color: #3FA9F5;
+	padding: 3px 6px 3px 6px;
+	
+	position: absolute;
+	bottom: 0;
+	right: 5%;
+	z-index: 100;
+
+}
+.pn-tag a:link,
+.pn-tag a:visited,
+.pn-tag a:active {
+	color: #E6E6E6; /* background gray */
+	text-decoration: none;
+}
+
+.pn-tag a:hover {
+	color: white;
+}
+
+.icon-box {
+    margin: 20px 0;
+}
+
+.icon-box a {
+    margin-right: 10px;
+}
+
+.icon-box a:hover {
+    background-color: white;
+    color: #3FA9F5; /* site blue */
+    background-color: transparent;
+}
+
+/* Colours 
+Grey: #E6E6E6
+Blue: #3FA9F5
+*/
