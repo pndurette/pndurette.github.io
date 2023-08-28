@@ -37,8 +37,9 @@ function i18n(class_name) {
     // Args:
     //   * class_name: a string that is the class of the elements to replace
     for (const element of document.getElementsByClassName(class_name)) {
-        console.log("i18n: " + element.id)
-        element.innerHTML = i18n_str(element.id);
+        phrase = i18n_str(element.id);
+        element.innerHTML = phrase
+        console.log(`i18n (${element.id}): ${phrase}`)
     }
 }
 
