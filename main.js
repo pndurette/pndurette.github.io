@@ -33,10 +33,10 @@ function i18n_str(phrase_key, lang = null) {
 }
 
 function i18n(class_name) {
-    // Replace contents of elements of class <className>, using the id as key
+    // Replace contents of elements of class <class_name>, using the id as key
     // Args:
-    //   * className: a string that is the class of the elements to replace
-    for (const element of document.getElementsByClassName(className)) {
+    //   * class_name: a string that is the class of the elements to replace
+    for (const element of document.getElementsByClassName(class_name)) {
         element.innerHTML = i18n_str(element.id);
     }
 }
@@ -52,7 +52,7 @@ var translations = {
         "schnauzers": "schnauzers",
     },
     "fr": {
-        "intro": "Bonjour! Je suis un ingénieur de plate-forme (platform engineer) à Montréal",
+        "intro": "Salut! Je suis un ingénieur de plate-forme (platform engineer) à Montréal",
         "touch_screens": "écrans tactiles",
         "vintage_macs": "Macs vintage",
         "3d_printing": "impression 3D",
