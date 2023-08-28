@@ -7,20 +7,17 @@
   <base target="_blank">
 
   <title>Pierre Nicolas Durette</title>
-  <meta name="description"
-    content="Hello! I'm a platform engineer in Montréal: Tech, Travel, Touch Screens & Schnauzer." />
+  <meta name="description" content="Hello! I'm a platform engineer in Montréal." />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@PierreNick">
   <meta name="twitter:title" content="Pierre Nicolas Durette">
-  <meta name="twitter:description"
-    content="Hello! I'm a platform engineer in Montréal: Tech, Travel, Touch Screens & Schnauzer.">
+  <meta name="twitter:description" content="Hello! I'm a platform engineer in Montréal.">
 
   <!-- Facebook -->
   <meta property="og:title" content="Pierre Nicolas Durette" />
-  <meta property="og:description"
-    content="Hello! I'm a platform engineer in Montréal: Tech, Travel, Touch Screens & Schnauzer.">
+  <meta property="og:description" content="Hello! I'm a platform engineer in Montréal.">
   <meta property="og:url" content="http://pierre-nick.com" />
   <meta property="og:image" content="http://pierre-nick.com/og.png">
   <meta property="og:type" content="website" />
@@ -32,7 +29,6 @@
 
   <link rel="stylesheet" type="text/css" href="main.css" />
   <script src="main.js"></script>
-
 </head>
 
 <body>
@@ -54,9 +50,10 @@
       <div class="inline-p">
 
         <p><strong>
-            Hello! I'm a platform engineer in Montréal:
+            <span class="i18n" id="intro">Hello! I'm a platform engineer in Montréal</span>:
             <a href="img/KellyRowlandNokia.gif">Tech</a>,
-            <a href="img/CherWardrobe.webp">touch screens</a>, <a href="img/FlyingToastersColour.gif">Vintage Macs</a>,
+            <a href="img/CherWardrobe.webp"><span class="i18n" id="touch_screens">touch screens</span></a>,
+            <a href="img/FlyingToastersColour.gif">Vintage Macs</a>,
             3D printing, open source & Schnauzers.
           </strong></p>
       </div>
@@ -70,6 +67,9 @@
     </div> <!-- /.content -->
     <div class="pn-tag"><a target="_self" href="#">PN</a></div>
   </section>
+
+  <!-- Substitute translations -->
+  <script>i18n(class_name = "i18n");</script>
 
 </body>
 
