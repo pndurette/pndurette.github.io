@@ -45,18 +45,20 @@ function i18n(class_name) {
 var translations = {
     "en": {
         "intro": "Hello! I'm a platform engineer in Montréal",
+        "tech": "Tech",
         "touch_screens": "touch screens",
         "vintage_macs": "vintage Macs",
         "3d_printing": "3D printing",
-        "open source": "open source",
+        "open_source": "open source",
         "schnauzers": "schnauzers",
     },
     "fr": {
         "intro": "Salut! Je suis un ingénieur de plate-forme (platform engineer) à Montréal",
+        "tech": "Technologie",
         "touch_screens": "écrans tactiles",
         "vintage_macs": "Macs vintage",
         "3d_printing": "impression 3D",
-        "open source": "open source",
+        "open_source": "open source",
         "schnauzers": "schnauzers",
     }
 }
